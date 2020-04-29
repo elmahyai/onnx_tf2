@@ -17,7 +17,7 @@ def main():
     parser.parse_args(["-h"])
   cli_tool = parser.parse_args([args[0]])
   if cli_tool.command == "convert":
-    return onnx_tf.converter.main(args[1:])
+    return converter.main(args[1:])
 
 
 if __name__ == '__main__':

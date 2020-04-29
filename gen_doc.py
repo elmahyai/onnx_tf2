@@ -20,11 +20,11 @@ def main(docs_dir):
 
 def gen_api(docs_dir):
   gen_doc_for = {
-      'onnx_tf.backend': [
-          onnx_tf.backend.prepare,
+      'backend': [
+          backend.prepare,
       ],
-      'onnx_tf.backend_rep.TensorflowRep': [
-          onnx_tf.backend_rep.TensorflowRep.export_graph,
+      'backend_rep.TensorflowRep': [
+          backend_rep.TensorflowRep.export_graph,
       ]
   }
   with open(os.path.join(docs_dir, 'API.md'), 'w') as doc_file:

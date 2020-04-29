@@ -166,7 +166,7 @@ def supports_device(device):
   return False
 
 
-@deprecated("onnx_tf.common.get_outputs_names is deprecated.{} {}".format(
+@deprecated("common.get_outputs_names is deprecated.{} {}".format(
     deprecated.MSG_WILL_REMOVE,
     "Use TensorflowGraph.get_outputs_names instead."))
 def get_output_node_names(graph_def):

@@ -1,6 +1,5 @@
 import tensorflow as tf
 from onnx.helper import make_opsetid
-import onnx_tf
 from common import data_type
 
 
@@ -37,7 +36,7 @@ class ScanMixin(object):
 
       # get the tensor operations for the onnx graph
       tensor_dict = \
-          onnx_tf.backend.onnx_graph_to_tensorflow_ops(
+          backend.onnx_graph_to_tensorflow_ops(
               graph_def=body,
               input_values=input_values,
               opset=current_opset,

@@ -13,7 +13,7 @@ import onnx
 
 import tensorflow as tf
 
-from onnx_tf import opset_version
+import opset_version
 
 
 def main(docs_dir):
